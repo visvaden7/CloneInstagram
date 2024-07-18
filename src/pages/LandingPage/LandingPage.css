@@ -1,0 +1,193 @@
+.container {
+    display: flex;
+    width: 60rem;
+    margin: 2rem auto;
+}
+
+
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    justify-content: center;
+}
+
+.input-wrapper p {
+    margin: 1.5rem 3px;
+}
+
+.input-box {
+    display: flex;
+    margin: 0.5rem 0 10px 0;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    justify-items: center;
+    align-items: center;
+}
+
+.input-box img {
+    width: 50%;
+    margin: 40px 2.5rem 40px 2.5rem;
+}
+
+.input-box input {
+    margin: 4px;
+    padding: 0 10px;
+    width: 70%;
+    height: 40px;
+    background-color: #f3f3f3;
+    border-radius: 3px;
+    border: 1px lightgray solid;
+    font-size: 12px;
+    font-weight: 700;
+    color: #f3f3f3;
+}
+.input-box button {
+    margin: 10px 4px;
+    width: 77.5%;
+    height: 35px;
+    color: white;
+    font-size: 14px;
+    font-weight: 900;
+    background-color: #5ea5e0;
+    border: 0px;
+    border-radius: 5px;
+}
+.input-box p {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.divider-wrapper {
+    display: flex;
+    height: 30px;
+    align-items: center;
+}
+
+.divider-wrapper p {
+    width: 30px;
+    margin: 20px;
+    font-size: 14px;
+}
+
+.dash {
+    flex: 1;
+    width: 87px;
+    height: 1px;
+    background-color: lightgray;
+}
+
+.facebook-login{
+    margin: 20px 0;
+}
+
+.facebook-login img {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.facebook-login p {
+    width: 180px;
+    color: #104a79;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.facebook-login-link {
+    width: 90%;
+    margin: 0 auto 5px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.facebook-login-link p {
+    margin: 10px 0;
+    width: 135px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.facebook-login-link img {
+    margin: 0 8px 0 0;
+}
+
+.go-signup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid lightgray;
+}
+
+.go-signup p {
+    margin: 1.5rem 3px;
+    font-weight: 500;
+    font-size: 13px;
+
+}
+
+.go-signup-link {
+   color: #4d99d9;
+}
+
+.App-store {
+    margin: 10px auto;
+}
+
+.imageWrapper {
+    width: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+}
+
+.imageWrapper img {
+    height: 50%
+}
+
+.download-app {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.download-app p{
+    text-align: center;
+    margin: 10px auto;
+    font-size: 14px;
+}
+
+.App-store {
+    height: 40px;
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.App-store img {
+    height: 40px;
+    margin: 0 5px;
+}
+
+.imageWrapper {
+    width: 400px;
+    display: flex;
+    position: relative;
+}
+
+.imageWrapper phone-border {
+    width: 400px
+
+}
+
+.imageWrapper img {
+    position: absolute;
+}
