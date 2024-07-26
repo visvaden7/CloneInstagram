@@ -1,10 +1,9 @@
 .container {
     display: flex;
-    width: 60rem;
+    max-width: 980px;
     margin: 2rem auto;
+    justify-content: center;
 }
-
-
 
 .input-wrapper {
     display: flex;
@@ -153,7 +152,7 @@
 }
 
 .download-app {
-    margin: 0 auto;
+    margin: 0;
     display: flex;
     flex-direction: column;
 }
@@ -196,5 +195,38 @@
     bottom: 15px;
     width: 67%;
     height: 93%;
-    /*opacity: 0;*/
+    opacity: 0;
+    animation: fade 12s infinite;
+    /*이미지를 12초 동안 fade 애니메이션을 무한 반복하도록 설정합니다.*/
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes fade {
+    0%, 25% { opacity: 1; } /* 애니메이션의 시작과 25% 지점까지 opacity가 1(완전 불투명)으로 설정됩니다. */
+    25.01%, 50% { opacity: 0; } /* 애니메이션의  25% 지점과 50%까지 opacity가 1(완전 불투명)으로 설정됩니다. */
+    50.01%, 75% { opacity: 0; } /* 애니메이션의  50% 지점과 75%까지 opacity가 1(완전 불투명)으로 설정됩니다. */
+    75.01%, 100% { opacity: 0; } /* 애니메이션의  75% 지점과 끝까지 opacity가 1(완전 불투명)으로 설정됩니다. */
+}
+
+.imageWrapper .phone-contents:nth-of-type(0) { /*동일 클래스 타입의 n번째 도큐먼트 객체의 css효과 주기*/
+    animation-delay: 0s;
+}
+
+.imageWrapper .phone-contents:nth-of-type(1) {
+    animation-delay: 3s;
+}
+
+.imageWrapper .phone-contents:nth-of-type(2) {
+    animation-delay: 6s;
+}
+
+.imageWrapper .phone-contents:nth-of-type(3) {
+    animation-delay: 9s;
+}
+
+@media (max-width: 1000px) {
+    .imageWrapper {
+        display: none;
+    }
 }
